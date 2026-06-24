@@ -53,6 +53,20 @@ body {
   overflow-x: hidden;
   font-family: var(--font-sans);
   transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent text size inflation on mobile landscape */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Ensure touch targets meet minimum size on mobile */
+@media (max-width: 640px) {
+  button, a, input, select, textarea {
+    min-height: 44px;
+  }
 }
 
 /* Base custom animations */
@@ -139,4 +153,13 @@ body {
     filter: blur(0px);
     transform: translateY(0);
   }
+}
+
+/* Hide scrollbar utility */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

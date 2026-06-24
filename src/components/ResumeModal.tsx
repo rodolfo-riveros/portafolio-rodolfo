@@ -29,7 +29,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.95, opacity: 0, y: 30 }}
           transition={{ type: 'spring', damping: 25, stiffness: 220 }}
-          className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl border border-primary/20 bg-[#06101c] text-[#d4e4fa] shadow-2xl p-6 md:p-10 glass-panel-heavy z-10 print:p-0 print:border-none print:bg-white print:text-black"
+          className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl border border-primary/20 bg-[#06101c] text-[#d4e4fa] shadow-2xl p-4 sm:p-6 md:p-10 glass-panel-heavy z-10 print:p-0 print:border-none print:bg-white print:text-black"
         >
           {/* Action Header */}
           <div className="flex justify-between items-center mb-8 border-b border-outline-variant/20 pb-4 print:hidden">

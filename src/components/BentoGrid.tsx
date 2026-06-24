@@ -52,7 +52,7 @@ function ProjectDetailsModal({ projectKey, onClose }: ProjectModalProps) {
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.95, opacity: 0, y: 20 }}
           transition={{ type: 'spring', damping: 25, stiffness: 250 }}
-          className="relative w-full max-w-4xl max-h-[85vh] overflow-y-auto rounded-xl border border-primary/20 bg-[#071322] text-[#d4e4fa] shadow-2xl shadow-primary/10 p-6 md:p-8 glass-panel-heavy z-10"
+          className="relative w-full max-w-4xl max-h-[85vh] overflow-y-auto rounded-xl border border-primary/20 bg-[#071322] text-[#d4e4fa] shadow-2xl shadow-primary/10 p-4 sm:p-6 md:p-8 glass-panel-heavy z-10"
         >
           {/* Close button */}
           <button

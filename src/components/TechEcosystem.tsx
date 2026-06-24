@@ -194,7 +194,7 @@ export default function TechEcosystem() {
         </div>
 
         {/* Hover detail panel */}
-        <div className="h-28 mt-8 w-full max-w-lg mx-auto flex items-center justify-center">
+        <div className="min-h-[6rem] sm:h-28 mt-8 w-full max-w-lg mx-auto flex items-center justify-center">
           <div className="relative w-full h-full">
             {hoveredTool ? (
               <motion.div

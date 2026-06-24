@@ -340,7 +340,7 @@ export default function TerminalMock() {
         className="bg-[#03070d]/90 backdrop-blur-md rounded-xl border border-outline-variant/30 overflow-hidden shadow-2xl shadow-primary/5 cursor-text relative transition-all duration-300 hover:border-primary/40 group"
       >
         {/* Terminal Header */}
-        <div className="bg-[#0b141f] px-6 py-3 flex items-center justify-between border-b border-outline-variant/20 select-none">
+        <div className="bg-[#0b141f] px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between border-b border-outline-variant/20 select-none">
           <div className="flex gap-2">
             <div className="w-3 h-3 rounded-full bg-red-500/40" />
             <div className="w-3 h-3 rounded-full bg-emerald-400/40" />
@@ -363,7 +363,7 @@ export default function TerminalMock() {
         )}
 
         {/* Console logs */}
-        <div className="p-6 md:p-8 font-mono text-xs md:text-sm text-primary/80 space-y-3 min-h-[320px] max-h-[500px] overflow-y-auto">
+        <div className="p-4 sm:p-6 md:p-8 font-mono text-xs md:text-sm text-primary/80 space-y-3 min-h-[260px] sm:min-h-[320px] max-h-[350px] sm:max-h-[500px] overflow-y-auto">
           {/* Welcome guide */}
           <div className="text-outline/70 border-b border-outline-variant/10 pb-4 mb-4 space-y-1 select-none">
             <p className="text-secondary font-bold">{t.terminal.welcomeTitle}</p>
